@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Nunito&family=Open+Sans:wght@400;600;700&family=Outfit&family=Raleway:ital@1&family=Roboto:wght@300&family=Send+Flowers&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+
+body{
+  background: #3a3c07;
+background: linear-gradient(90deg, #6a6d0c 0%, #e7de09 35%, #3a3c07 100%);
+}
+
+nav{
+  background: #3a3c07;
+  background: linear-gradient(90deg, #6a6d0c 0%, #e7de09 35%, #3a3c07 100%);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0 3.5rem;
+}
+ nav .logo{
+  font-family: 'Send Flowers', cursive;
+  color: #fff;
+  letter-spacing: 1.2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bolder;
+  flex: 2 1 50px;
+}
+
+nav .social-icon ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav .social-icon ul li{
+ list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+.social-icon a {
+  text-decoration: none;
+}
+
+.social-icon a img, .social-icon a i{
+  color: #ffff;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.hero{
+  color: #000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero section{
+padding: 0 3.5rem;
+}
+
+.hero img{
+  max-height: 100vh;
+  width: 50%;
+}
+
+.hero button{
+  border-radius: 4px;
+padding: 16px;
+background: white;
+}
+
+.hero button a i{
+text-decoration: none;
+color: black;
+}
+
+.hero button:hover{
+  box-shadow: 0 2px 5px white;
+}
+
+.container{
+  padding: 3.3rem;
+  color: #000;
+}
+hr{
+  border: 1px thin #3a3c07;
+  opacity: 0.3;
+}
+
+.service-cont > h2, .work-cont >h2, .service > h3{
+  margin-bottom: 0.5em;
+}
+
+.services, .works{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3em 0;
+}
+
+.services .service, .works .work{
+  flex: 30%;
+  text-align: center;
+  padding: 2em 1.5em;
+  margin-bottom: 10px;
+}
+
+.services .service:hover{
+  box-shadow: 0 10px 30px #3a3c07;
+}
+
+.service img{
+  height: 200px;
+  max-width: 200px;
+}
+
+.work img{
+  width: 300px;
+  height: 300px;
+}
+
+.info{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.info section{
+  flex: 30%;
+  padding: 1.5em 2em;
+}
+
+.info{
+  text-align: center;
+  color: #000;
+}
+
+.copy{
+  color: #fff;
+  text-align: center;
+  font-family: 'Send Flowers', cursive;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+}
+#call{
+  text-decoration: none;
+  color:#3a3c07;
+}
+
+
+@media screen and (max-width: 700px)  {
+  .hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero button{
+    display: none;
+  }
+.hero img{
+  display: none;
+}
+.services .service, .works .work{
+  flex: 100%;
+}
+
+.foot{
+display: none;
+}
+}
